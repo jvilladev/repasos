@@ -1,3 +1,31 @@
+
+interface User {
+    name: string;
+    age: number;
+    address: Address;
+}
+
+interface Address {
+    city: string;
+    street: number;
+}
+
+// ↑ esto se puede colocar en un solo objeto pero no es lo mas comun ni escalable
+
+const wife: User = {
+    name: 'Yarami',
+    age: 33,
+    address: {
+        city: "Panamá",
+        street: 50
+    }
+}
+
+// IA que valores colocar en interfaces y cuales NO 
+
+console.log({wife});
+
+
 const nameUser = 'admin';
 
 const user = {
@@ -5,6 +33,8 @@ const user = {
     age: 38,
     password: "Panama123*"
 }
+
+// user.age = '15'; x en ts no puedo cambiar el tipo de valor que defini desde un inicio
 
 console.log({ nameUser });
 
