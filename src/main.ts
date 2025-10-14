@@ -3,7 +3,8 @@
 //import './bases/03-object-literal';
 //import './bases/06-desestructuration';
 // import './bases/07-array-desetructuring';
-import './bases/09-promises';
+//import './bases/09-promises';
+import './bases/10-fetch-api';
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
